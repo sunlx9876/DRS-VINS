@@ -1,0 +1,10 @@
+<launch>
+    <arg name="config_file" default="$(find drs_vins)/../config/kitti_odom/kitti_config00-02.yaml" />
+    <arg name="sequence_path" default="" />
+    <arg name="with_rviz" default="true" />
+    <arg name="with_loop" default="false" />
+
+    <node name="drs_estimator" pkg="drs_vins" type="drs_kitti_odom_test" args="$(arg config_file) $(arg sequence_path)" output="screen" required="true" />
+    <node if="$(arg with_rviz)" name="rvizvisualisation" pkg="rviz" type="rviz" output="log" args="-d $(find drs_vins)/../config/drs_vins_rviz_config.rviz" />
+    <node if="$(arg with_loop)" name="loop_fusion" pkg="loop_fusion" type="loop_fusion_node" args="$(arg config_file)" output="screen" />
+</launch>
