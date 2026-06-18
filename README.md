@@ -12,18 +12,6 @@ The current codebase focuses on the DRS-VINS pipeline for:
 - confidence-guided sliding-window optimization
 - optional loop closure based on the original VINS-Fusion loop fusion module
 
-
-## Implemented DRS-VINS Modules
-
-The repository currently maps the DRS-VINS method into the following code path:
-
-- frontend tracking and dynamic observation construction
-- structure-aware triangulation and feature quality evaluation
-- weighted visual-inertial optimization and confidence screening
-- weighted projection factors
-- optional loop closure
-
-
 ## Build
 
 Environment requirements:
