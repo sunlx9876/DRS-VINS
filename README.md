@@ -25,8 +25,6 @@ Environment requirements:
 
 ## Relation to VINS-Fusion
 
-This project is not an independent rewrite from scratch. It explicitly reuses and modifies parts of VINS-Fusion.
-
 The DRS-VINS implementation in this repository inherits and extends VINS-Fusion components such as:
 
 - estimator framework and sliding-window optimization
