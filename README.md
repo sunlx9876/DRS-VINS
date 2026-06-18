@@ -17,18 +17,11 @@ The current codebase focuses on the DRS-VINS pipeline for:
 
 The repository currently maps the DRS-VINS method into the following code path:
 
-- frontend tracking and dynamic observation construction:
-  [feature_tracker.cpp]
-- structure-aware triangulation and feature quality evaluation:
-  [feature_manager.cpp]
-- weighted visual-inertial optimization and confidence screening:
-  [estimator.cpp]
-- weighted projection factors:
-  [projectionTwoFrameOneCamFactor.cpp]
-  [projectionTwoFrameTwoCamFactor.cpp]
-  [projectionOneFrameTwoCamFactor.cpp]
-- optional loop closure:
-  [loop_fusion/src/pose_graph_node.cpp]
+- frontend tracking and dynamic observation construction
+- structure-aware triangulation and feature quality evaluation
+- weighted visual-inertial optimization and confidence screening
+- weighted projection factors
+- optional loop closure
 
 
 ## Build
@@ -73,6 +66,6 @@ To preserve attribution correctly:
 
 If you describe or publish results from this repository, you should cite both:
 
-- the DRS-VINS paper or manuscript corresponding to your method
+- the DRS-VINS paper or manuscript
 - the original VINS-Fusion / VINS-Mono work that this implementation builds on
 
